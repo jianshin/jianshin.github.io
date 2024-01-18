@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TabNavBarComponent } from './tab-nav-bar.component';
 
-describe('TabNavBarComponent', () => {
-  let component: TabNavBarComponent;
-  let fixture: ComponentFixture<TabNavBarComponent>;
+import { ExpansionPanelComponent } from './expansion-panel.component';
+
+describe('ExpansionPanelComponent', () => {
+  let component: ExpansionPanelComponent;
+  let fixture: ComponentFixture<ExpansionPanelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TabNavBarComponent]
+      imports: [ExpansionPanelComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TabNavBarComponent);
+    fixture = TestBed.createComponent(ExpansionPanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

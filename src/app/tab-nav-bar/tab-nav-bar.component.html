@@ -10,9 +10,9 @@
         [active]="activeLink == link"
         routerLink="/{{link | lowercase}}"> {{link}} </a>
     }
-    <button mat-raised-button class="example-action-button" (click)="toggleBackground()">
-    Toggle background
-    </button>
+    <mat-slide-toggle mat-raised-button class="example-action-button" (click)="toggleBackground()" [color]="background" value="darkmode">
+    Dark mode
+    </mat-slide-toggle>
 </nav>
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 

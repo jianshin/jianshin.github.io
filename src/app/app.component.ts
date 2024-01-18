@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, 
+  imports: [
+    CommonModule, 
     RouterOutlet, 
     RouterLink, 
     TabNavBarComponent,
@@ -18,5 +19,5 @@ import { HomeComponent } from './home/home.component';
 })
 
 export class AppComponent {
-  title = 'Test Project';
+  title = 'Angular Project';
 }
