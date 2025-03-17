@@ -10,11 +10,10 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle'
  * @title Basic use of the tab nav bar
  */
 @Component({
-  selector: 'tab-nav-bar',
-  templateUrl: './tab-nav-bar.component.html',
-  styleUrls: ['./tab-nav-bar.component.css'],
-  standalone: true,
-  imports: [CommonModule, MatTabsModule, MatButtonModule, MatSlideToggleModule,RouterLink],
+    selector: 'tab-nav-bar',
+    templateUrl: './tab-nav-bar.component.html',
+    styleUrls: ['./tab-nav-bar.component.css'],
+    imports: [CommonModule, MatTabsModule, MatButtonModule, MatSlideToggleModule, RouterLink]
 })
 export class TabNavBarComponent {
   links = ['About', 'Projects', 'Contact'];
