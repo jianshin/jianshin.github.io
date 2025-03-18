@@ -10,19 +10,19 @@ export const routes: Routes = [
     title: 'Home',
     component: HomeComponent,
     },
-    {
-    path: 'about',
-    title: 'About',
-    component: AboutComponent,
-    },
+    // {
+    // path: 'about',
+    // title: 'About',
+    // component: AboutComponent,
+    // },
     {
     path: 'projects',
     title: 'Projects',
     component: ProjectsComponent,
     },
-    {
-    path: 'contact',
-    title: 'Contact',
-    component: ContactComponent,
-    },
+    // {
+    // path: 'contact',
+    // title: 'Contact',
+    // component: ContactComponent,
+    // },
 ];

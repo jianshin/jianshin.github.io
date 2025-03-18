@@ -16,11 +16,27 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle'
     imports: [CommonModule, MatTabsModule, MatButtonModule, MatSlideToggleModule, RouterLink]
 })
 export class TabNavBarComponent {
-  links = ['About', 'Projects', 'Contact'];
+  // links = ['About', 'Projects', 'Contact'];
+  links = [
+    { label: 'Home', path: '' },
+    // { label: 'About', path: 'about' },
+    { label: 'Projects', path: 'projects' },
+    // { label: 'Contact', path: 'contact' }
+  ];
   activeLink = this.links[0];
-  background: ThemePalette = undefined;
+  
+  isDarkMode = false; // Default state
 
-  toggleBackground() {
-    this.background = this.background ? undefined : 'primary';
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    this.updateTheme();
+  }
+
+  updateTheme() {
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   }
 }
