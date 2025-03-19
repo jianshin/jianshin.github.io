@@ -2,8 +2,19 @@
 <tab-nav-bar (toggleDarkMode)="onToggleDarkMode($event)"/>
 <main class="main">
   <div class="clouds">
-    <img src="assets/images/cloud.png" class="cloud cloud1" />
-    <img src="assets/images/cloud.png" class="cloud cloud2" />
+    @if (darkMode) {
+      <img src="assets/images/cloud.png" class="cloud cloud1" />
+      <img src="assets/images/cloud.png" class="cloud cloud2" />
+      <div class="lightning-container1">
+        <img src="assets/images/lightning.png" class="lightning1"/>
+      </div>
+      <div class="lightning-container2">
+        <img src="assets/images/lightning.png" class="lightning2"/>
+      </div>
+    } @else {
+      <img src="assets/images/cloud.png" class="cloud cloud1" />
+      <img src="assets/images/cloud.png" class="cloud cloud2" />
+    }
   </div>
   <div class="sakura-container"></div>
   <router-outlet/>
