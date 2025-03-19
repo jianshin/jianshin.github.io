@@ -31,28 +31,12 @@
     }
 }
 
-/* .icon {
-    display: inline-block;
-    font-size: 18px;
-    color: white;
-    width: 20px;
-    height: 20px;
-} */
-
 .icon_light {
     position: fixed;
     width: 18px;
     height: 18px;
     background-size: contain;
     background-image: url('../../assets/images/light_mode.png');
-
-    /* .light {
-        background-image: url('../../assets/images/light_mode.png');
-    }
-
-    .dark {
-        background-image: url('../../assets/images/dark_mode.png');
-    } */
   }
 
 .icon_dark {
@@ -61,11 +45,4 @@
     height: 18px;
     background-size: contain;
     background-image: url('../../assets/images/dark_mode.png');
-    /* .light {
-        background-image: url('../../assets/images/light_mode.png');
-    }
-
-    .dark {
-        background-image: url('../../assets/images/dark_mode.png');
-    } */
   }

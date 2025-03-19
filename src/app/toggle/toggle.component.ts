@@ -1,13 +1,11 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'app-toggle',
     imports: [
         CommonModule,
-        MatIconModule
     ],
     templateUrl: './toggle.component.html',
     styleUrl: './toggle.component.css',
@@ -25,10 +23,6 @@ import { MatIconModule } from '@angular/material/icon';
 export class ToggleComponent {
     @Input() toggleOn = false;
     @Output() toggledTo = new EventEmitter();
-
-    constructor() {}
-
-    // ngOnInit(): void {}
 
     toggleClick(): any {
         if (this.toggleOn) {

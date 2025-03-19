@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
 
 :root {
   --primary-color: #ffb6c1;
@@ -10,7 +10,7 @@
   }
   
   .dark-mode {
-    --background-color: #121212;
+    --background-color: #222222;
     --text-color: white;
     --text-background-color: rgba(18, 18, 18, 0.6); 
   }
@@ -95,18 +95,40 @@
     background-size: contain;
     opacity: 0.8;
     pointer-events: none; 
-    animation: fall linear infinite;
-    /* mix-blend-mode: multiply; */
+    animation: fall_flower linear infinite;
+    z-index: 2;
+  }
+
+  .rain {
+    position: fixed;
+    width: 12px;
+    height: 18px;
+    background-image: url('assets/images/rain.png');
+    background-size: contain;
+    opacity: 0.8;
+    pointer-events: none; 
+    animation: fall_rain linear infinite;
     z-index: 2;
   }
   
-  @keyframes fall {
+  @keyframes fall_flower {
     0% {
       transform: translateY(-10vh) rotate(0deg);
       opacity: 1;
     }
     100% {
       transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fall_rain {
+    0% {
+      transform: translateY(-10vh);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
       opacity: 0;
     }
   }
