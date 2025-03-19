@@ -93,6 +93,7 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
+    z-index: 1;
   }
 
   .sakura {
@@ -105,7 +106,7 @@
     pointer-events: none; 
     animation: fall linear infinite;
     /* mix-blend-mode: multiply; */
-    z-index: 1;
+    z-index: 2;
   }
   
   @keyframes fall {
@@ -117,5 +118,10 @@
       transform: translateY(100vh) rotate(360deg);
       opacity: 0;
     }
+  }
+
+  h1, h2, h3, p {
+    position: relative;
+    z-index: 5;
   }
   
