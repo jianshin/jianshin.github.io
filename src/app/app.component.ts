@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink } from '@angular/router';
 import { TabNavBarComponent } from './tab-nav-bar/tab-nav-bar.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
     selector: 'app-root',
@@ -9,6 +10,7 @@ import { TabNavBarComponent } from './tab-nav-bar/tab-nav-bar.component';
         CommonModule,
         RouterOutlet,
         TabNavBarComponent,
+        // BrowserAnimationsModule
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'

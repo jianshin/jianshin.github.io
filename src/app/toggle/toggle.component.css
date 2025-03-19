@@ -1,0 +1,71 @@
+.toggle-bg {
+    display: inline-block;
+    height: 1.1rem;
+    width: 2.2rem;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 1px 1px #00000050;
+    margin: 0.1rem;
+        
+    .toggle {
+        width: 1.1rem;
+        height: 1.1rem;
+        display: inline-block;
+        background-color: goldenrod;
+        position: absolute;
+        left: 0.01rem;
+        top: 0;
+        bottom: 0;
+        margin: 0.01rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 1px #00000050;
+    }
+}
+
+.toggle-on {
+    background-color: violet;
+    
+    .toggle {
+        background-color: purple;
+    }
+}
+
+/* .icon {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    width: 20px;
+    height: 20px;
+} */
+
+.icon_light {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url('../../assets/images/light_mode.png');
+
+    /* .light {
+        background-image: url('../../assets/images/light_mode.png');
+    }
+
+    .dark {
+        background-image: url('../../assets/images/dark_mode.png');
+    } */
+  }
+
+.icon_dark {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url('../../assets/images/dark_mode.png');
+    /* .light {
+        background-image: url('../../assets/images/light_mode.png');
+    }
+
+    .dark {
+        background-image: url('../../assets/images/dark_mode.png');
+    } */
+  }

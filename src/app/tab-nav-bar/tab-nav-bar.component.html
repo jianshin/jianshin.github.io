@@ -5,8 +5,9 @@
         [active]="activeLink == link"
         routerLink="/{{link.path| lowercase}}"> {{link.label}} </a>
     }
-    <mat-slide-toggle mat-raised-button class="example-action-button" (click)="toggleDarkMode()">
-    </mat-slide-toggle>
+    <!-- <mat-slide-toggle mat-raised-button class="example-action-button" (click)="toggleDarkMode()">
+    </mat-slide-toggle> -->
+  <app-toggle (toggledTo)="onEditorToggle($event)"></app-toggle>
 </nav>
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 

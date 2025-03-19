@@ -1,0 +1,19 @@
+
+<a 
+    class="toggle-container"
+    (click)="toggleClick()"
+>
+    <div [ngClass]="toggleOn ? 'toggle-bg toggle-on' : 'toggle-bg'">
+        <div 
+        [@toggleTrigger]="toggleOn ? 'on': 'off'"
+        class="toggle">
+            @if (toggleOn) {
+                <span class="icon_dark">
+                </span>
+            } @else {
+                <span class="icon_light">
+                </span>
+            }
+        </div>
+    </div>
+</a>
